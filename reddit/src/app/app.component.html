@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+<form>
+ 
+  <h3 >Add a Link</h3>
+  <div>
+    <label for="title">Title:</label>
+    <input name="title" #newtitle>  <!--Aggiunta una variabile di template-->
+  </div>
+  <div>
+    <label for="link">Link:</label>
+  <input name="link" #newlink> <!--Aggiunta una variabile di template-->
+  </div>
+  <button (click)="addArticle(newtitle, newlink)"> <!--Passiamo le variabili come parametro-->
+  Submit link
+  </button>
+</form>
